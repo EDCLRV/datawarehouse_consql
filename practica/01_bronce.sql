@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS bronce.crm_cust_info (
     cst_key TEXT,
     cst_firstname TEXT,
     cst_lastname TEXT,
-    cst_material_status TEXT,
+    cst_marital_status TEXT,
     cst_gndr TEXT,
     cst_create_date TEXT
 );
@@ -115,7 +115,7 @@ BEGIN
     FOR r IN
         SELECT * FROM (
             VALUES
-            (1, 'crm_cust_info', 'cust_info.csv', 'cst_id, cst_key, cst_firstname, cst_lastname, cst_material_status, cst_gndr, cst_create_date'),
+            (1, 'crm_cust_info', 'cust_info.csv', 'cst_id, cst_key, cst_firstname, cst_lastname, cst_marital_status, cst_gndr, cst_create_date'),
             (2, 'crm_prd_info', 'prd_info.csv', 'prd_id, prd_key, prd_nm, prd_cost, prd_line, prd_start_dt, prd_end_dt'),
             (3, 'crm_sales_details', 'sales_details.csv', 'sls_ord_num, sls_prd_key, sls_cust_id, sls_order_dt, sls_ship_dt, sls_due_dt, sls_sales, sls_quantity, sls_price'),
             (4, 'erp_loc_a101', 'LOC_A101.csv', 'cid, cntry'),
