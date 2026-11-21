@@ -1,6 +1,6 @@
 /*
 DDL Y CARGA CRM DEL ESQUEMA PLATA - PostgreSQL / psql
-Integra la lógica de 03_transformar_crm_cust_info.sql.
+
 ADVERTENCIA: vacía y recarga las tres tablas CRM de plata.
 Bronce no se modifica. ERP: solo DDL, sin carga.
 Las tablas existentes deben tener una estructura compatible.
